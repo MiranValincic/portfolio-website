@@ -1,10 +1,11 @@
 /* 
      Colors:
-background color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-primary color: #191D0E;
-secondary color: #F4FAFF;
-links active color: #0C3500;
-button-color: #004D7A;
+background color: #031627;
+primary color: #DAF3FF;
+secondary color: #6b6bff;
+links-color:#FFEDCB;
+links active color: #00A481;
+button-color: #007279;
 
  */
 
@@ -15,11 +16,12 @@ button-color: #004D7A;
 }
 
 :root {
-    --background-color: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    --primary-color: #191D0E;
-    --secondary-color:#07363A;
-    --links-active-color: #0C3500;
-    --button-color:#E4FEFF;
+    --background-color: #031627;
+    --primary-color: #DAF3FF;
+    --secondary-color:#6b6bff;
+    --links-color:#FFEDCB;
+    --links-active-color: #00A481;
+    --button-color:#007279;
 }
 
 html{
@@ -27,7 +29,7 @@ html{
 }
 
 body {
-   background-image: var(--background-color);
+   background-color: var(--background-color);
    font-size: 1.5em;
    font-family: 'Scheherazade New', serif;
    line-height: 1.6;
@@ -80,7 +82,7 @@ ul {
 }
 
 .nav-list li a {
-    color: var(--primary-color);
+    color: var(--links-color);
 }
 
 .profile {
@@ -110,21 +112,22 @@ h2 {
 } 
  
 p {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-size: .9em;
 }
  
 a {
     text-decoration: none;
+    color: var(--links-color);
 }
- 
+
 a:visited{
-     color:var(--secondary-color);
+     color:var(--links-color);
 }
  
 a:hover, 
 a:focus {
-    color:var(--secondary-color);
+    color:var(--primary-color);
 }
  
 a:active {
@@ -141,7 +144,7 @@ a:active {
 .btn{
     background-color:var(--button-color);
     border: none;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     padding: .8em;
     margin: 0.5em;
     border-radius: 5px;
@@ -155,7 +158,7 @@ a:active {
 
 .btn:hover, 
 .btn:focus {
-    background-color:var(--secondary-color) ;
+    background-color:var(--primary-color) ;
     color: var(--button-color);
     opacity: 0.7;
     cursor: pointer;
@@ -167,6 +170,7 @@ a:active {
     justify-content: center;
     max-width: 750px;
     margin: 0 auto;
+    color: var(--primary-color);
 }
 
 .contact {
@@ -178,6 +182,7 @@ a:active {
 }
 
 .form {
+    color: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,7 +190,7 @@ a:active {
 
 .form-item {
     border: none;
-    border-bottom: 1px solid var(--secondary-color) ;
+    border-bottom: 1px solid var(--links-color) ;
     background-color: inherit;
 }
 
@@ -197,7 +202,7 @@ a:active {
     background-color:var(--button-color);
     border: none;
     border-radius: 5px;
-    color:var(--secondary-color) ;
+    color:var(--primary-color) ;
     font-size: 0.7em;
     padding: 0.8em;
 }
@@ -208,6 +213,7 @@ a:active {
 }
 
 .signature {
+    color: var(--secondary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
