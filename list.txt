@@ -1,0 +1,3 @@
+I am using a Visual Studio Code and for a linters I am using a ESLint extensions. 
+
+I have problems with Internet Explorer, grid is not working, as well as home page positioning. On other browser I have not seen any other problem. 

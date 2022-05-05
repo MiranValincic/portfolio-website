@@ -167,10 +167,10 @@ a:active {
 .table {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     max-width: 750px;
     margin: 0 auto;
-    color: var(--primary-color);
+    margin-bottom: 4em;
 }
 
 .contact {
@@ -246,6 +246,7 @@ a:active {
     display: inline-block;
     width: 50%;
 }
+
 
 @supports (display: grid) {
     .grid {
@@ -389,7 +390,14 @@ a:active {
 .cloud-back {
     animation: 34s cloud-move-reverse infinite alternate linear;
 }
-  
+.about-title {
+    display: flex;
+    justify-content: center;
+}
+.programs{
+    display: flex;
+    justify-content: center;
+}
 
 
 
