@@ -510,3 +510,14 @@ button-color: #007279;
      width: 100%;
      height: 30%;
  }
+
+ .poke {
+     width: 100%;
+     height: 30%;
+ }
+
+.chat {
+    width: 30%;
+    height: 30%;
+    margin-left: 25%;
+}
