@@ -16,7 +16,9 @@ button-color: #007279;
 
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto:wght@100&display=swap');
+
 
  * {
      -webkit-box-sizing: border-box;
@@ -30,7 +32,7 @@ button-color: #007279;
  body {
     background-color: #031627;
     font-size: 1.5em;
-    font-family: 'Scheherazade New', serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     min-height: 100%;
     overflow-x: hidden;
@@ -327,7 +329,7 @@ button-color: #007279;
      }
  }
  
- @media all and (max-width: 500px) {
+ @media all and (max-width: 750px) {
  
      .nav-list li {
         margin-left: 0.4px;
@@ -382,7 +384,7 @@ button-color: #007279;
      }
  }
  
- @media all and (min-width: 500px) and (max-width: 750px){
+ @media all and (min-width: 750px) and (max-width: 1200px){
      .grid {
        -ms-grid-columns: 1fr 3rem 1fr;
        grid-template-columns: 1fr 1fr;
@@ -406,7 +408,13 @@ button-color: #007279;
      }
  }
  
- @media all and (min-width: 1200px) {
+ @media all and (min-width: 1200px) and (max-width:1500px) {
+     .grid {
+         -ms-grid-columns: 1fr 3rem 1fr 3rem 1fr ;
+         grid-template-columns: 1fr 1fr 1fr;
+     }
+ }
+ @media all and (min-width: 1500px) {
      .grid {
          -ms-grid-columns: 1fr 3rem 1fr 3rem 1fr 3rem 1fr;
          grid-template-columns: 1fr 1fr 1fr 1fr;
